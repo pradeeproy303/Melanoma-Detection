@@ -88,6 +88,19 @@ Activation Function(Softmax) - The softmax function is used as the activation fu
 
 ![image](https://user-images.githubusercontent.com/106435066/202228660-b08ef53f-0e1c-4479-bac6-a283c5dc7e41.png)
 
+<h2>Conclusions</h2>
+
+Conclusion from Model M1 analysis: It was evident that the model clearly overfits, and thus we need to chose right data augumentation strategy.<br/>
+Conclusion from Model M2 analysis: Model M2 has definitely reduce the overfitting and has improved using the data augmentation strategy. However, it still underfits as the accuracy is on the lower side.<br/>
+Conclusion from analysis of the classes in the dataset:<br/>
+- There is a class imbalance in the dataset and hence we need to take care of it.
+- The class 'seborrheic keratosis' has the least number of samples.
+- Classes which dominate the data in terms of proportionate number of samples are 'pigmented benign keratosis', 'melanoma', 'basal cell carcinoma', 'nevus'
+<br/>
+Conclusion from Model M3 analysis: <br/>
+- The class rebalance really helped in reducing underfitting of the data and as a result the loss is also taken care of. 
+- Also, the accuracy helped us predict the test data set images appropriately to certain extent.
+
 <h2>References</h2>
 
 <a>https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image_dataset_from_directory</a>
